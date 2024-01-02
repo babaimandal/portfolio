@@ -1,0 +1,629 @@
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+  .portfolio .projects .box .content h2 {
+    font-size: 18px;
+  }
+  banner .lt-block h3 {
+    font-size: 35px;
+  }
+  .skils-section .box {
+    /*    height: 62px;*/
+    padding: 0 0 0 7px;
+  }
+  .skils-section .content-text h3 {
+    font-size: 17px;
+  }
+  .skils-section .content-text p {
+    font-size: 14px;
+  }
+  .skils-section .content-box {
+    width: 48px;
+  }
+  banner .lt-block h3 {
+    font-size: 35px;
+  }
+  banner .lt-block h3 span {
+    font-size: 54px;
+  }
+  banner .lt-block p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  banner .banner-flex {
+    padding: 177px 0 155px 0;
+  }
+  .about-section .about-section-heding h2 a {
+    font-size: 23px;
+  }
+  .about-section .about-section-heding h2 i {
+    color: #ff024f;
+    font-size: 23px;
+  }
+  .about-section .about-section-heding h2 a {
+    margin: 0 0 5px 0;
+  }
+  .portfolio .portfolio-heading h2 a {
+    font-size: 23px;
+  }
+  .portfolio .portfolio-heading h2 i {
+  }
+  .portfolio .portfolio-heading h2 a {
+    margin: 0 0 9px 0;
+  }
+  .skill .skill-heading h2 i {
+    font-size: 23px;
+  }
+  .skill .skill-heading h2 {
+    font-size: 23px;
+  }
+  banner .banner-flex {
+    flex-direction: column;
+  }
+  banner .banner-flex .lt-block {
+    text-align: center;
+  }
+  banner .rt-block .image-block {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 833px;
+  }
+  header .resume-download {
+    display: flex;
+    justify-content: center;
+  }
+  header .logo-block h2 {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 26px;
+    margin: 0;
+    font-weight: 600;
+  }
+  header .header-flex .nav-block nav ul {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  header .header-flex .nav-block nav ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "DM Sans", sans-serif;
+  }
+  header .resume-download p a {
+    font-size: 15px;
+  }
+  header .resume-download p span {
+    font-size: 15px;
+  }
+  .contact-section .lt-block form .box input {
+    width: 100%;
+  }
+  .contact-section .lt-block form .box {
+    width: 100%;
+  }
+  .contact-section .lt-block form .big-box {
+    width: 100%;
+  }
+  .contact-section .lt-block form .big-box input {
+    width: 100%;
+  }
+  .contact-section .lt-block form button {
+    width: 100%;
+  }
+  .contact-section .rt-block .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section .rt-block {
+    text-align: center;
+    justify-content: center;
+  }
+  banner .rt-block::after {
+    right: 120px;
+    bottom: -94px;
+    width: 194px;
+    height: 232px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  /*  header .mobile-menu {
+    display: block;
+    height: 15px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 15px;
+    border-radius: 3px;
+  }*/
+  header .mobile-menu {
+    display: block;
+    /* height: 15px; */
+    /* background: #fff; */
+    /* padding: 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 15px; */
+    /* border-radius: 3px; */
+    gap: 13px;
+  }
+  header .mobile-menu p {
+    color: #fff;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    font-weight: 600;
+  }
+  header .resume-download {
+    padding: 0 144px 0 0;
+  }
+  header .nav-block {
+    display: none;
+  }
+  header .resume-download p a {
+    /*    display: none;*/
+  }
+  header .resume-download p .phone-number {
+    display: block;
+  }
+  header .resume-download p span {
+    font-size: 18px;
+  }
+  .contact-section {
+    padding: 73px 0 55px 0;
+  }
+  .mobile-number {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .primary-button {
+    letter-spacing: 0;
+  }
+  .contact-section .rt-block .box {
+    width: 100%;
+  }
+  .contact-section .rt-block .box {
+    margin-bottom: 22px;
+  }
+  .contact-section .rt-block {
+  }
+  .contact-section .contact-heading h2 a {
+    margin: 0 0 10px 0;
+  }
+  banner .lt-block h3 span {
+    font-size: 48px;
+  }
+  banner .lt-block h3 {
+    font-size: 32px;
+  }
+  banner .lt-block p {
+    font-size: 18px;
+  }
+  .about-section .about-section-heding h2 a {
+    margin: 0 0 5px 0;
+  }
+  .portfolio .portfolio-heading h2 a {
+    margin: 0 0 5px 0;
+  }
+  .skill .skill-heading h2 {
+    margin: 0 0 5px 0;
+  }
+  .contact-section .contact-heading h2 a {
+    margin: 0 0 5px 0;
+  }
+  .mobile-menu-bar .menu-bar-wrapper ul {
+    padding: 0;
+    margin-top: 21px;
+  }
+  .portfolio .projects .box .content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  banner .lt-block a i {
+    padding-left: 6px;
+    font-size: 14px;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  header .logo-block h2 {
+    font-size: 22px;
+  }
+  header .resume-download p span {
+    font-size: 14px;
+  }
+  banner .lt-block h3 {
+    font-size: 25px;
+  }
+  banner .lt-block h3 span {
+    font-size: 30px;
+  }
+  banner .lt-block p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  header .resume-download {
+    padding: 0 88px 0 0;
+  }
+  banner .banner-flex {
+    padding: 105px 0 85px 0;
+  }
+  header .header-flex {
+    padding: 13px 11px;
+  }
+  banner .lt-block a {
+    margin-right: 6px;
+    font-weight: 100;
+  }
+  banner .lt-block a i {
+    font-size: 13px;
+  }
+  .primary-button {
+    color: #fff;
+    background-color: #ff024f;
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+  }
+  .portfolio .portfolio-heading h2 {
+    margin: 0px;
+  }
+  .portfolio {
+    background-color: #1d2025;
+    padding: 85px 0;
+  }
+  .about-section .about-section-heding h2 {
+    margin: 0px;
+  }
+  .portfolio .projects .box .content h2 {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .portfolio .projects .box .content p {
+    font-size: 16px;
+  }
+  .portfolio .projects .box .content .design-element {
+    margin: 1px 0 0 0;
+  }
+  .skills-text h3 {
+    max-width: 100%;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .skills-text {
+    padding: 0 17px;
+  }
+  div#Contact {
+    margin: 0px 0 0px 1px;
+  }
+  .contact-section .contact-heading h2 {
+    margin: 0;
+  }
+  .skils-section .content-box {
+    width: 50px;
+  }
+  .skils-section .box {
+    width: 100%;
+    background-color: #1d273b66;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 15px;
+    border-radius: 10px;
+    margin: 0 0 29px 0;
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  .skils-section .box {
+    height: 120px;
+    text-align: center;
+  }
+  .skils-section .box {
+    padding: 0;
+    justify-content: center;
+  }
+  .skils-section .box .content-text {
+    margin-top: 8px;
+  }
+  .skill {
+    padding: 51px 0 20px 0;
+  }
+  .skils-section .content-text h3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .skills-hero-content-beginner {
+    flex-direction: column;
+  }
+  .contact-section .contact-heading h2 a {
+    margin: 0 0 5px 0;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .skill .skill-heading h2 {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 499px) {
+  banner .banner-flex {
+    padding: 250px 0 141px 0;
+  }
+  banner .banner-flex {
+    padding: 100px 0 85px 0;
+  }
+  .about-section p {
+    margin-top: 22px;
+  }
+  .portfolio .portfolio-heading h2 {
+    text-align: center;
+  }
+  .portfolio .portfolio-heading .design-element {
+    margin: 0 auto;
+  }
+  .about-section .about-section-heding h2 {
+    text-align: center;
+  }
+  .about-section .about-section-heding .design-element {
+    margin: 0 auto;
+  }
+  .portfolio .projects .box .content h2 {
+    text-align: center;
+  }
+  .portfolio .projects .box .content .design-element {
+    margin: 0 auto;
+  }
+  .portfolio .projects .box .content p {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 12px;
+  }
+  .portfolio .projects .box {
+    padding: 15px 0 15px 0;
+  }
+  .skill .skill-heading h2 {
+    text-align: center;
+  }
+  .skill .skill-heading .design-element {
+    margin: 0 auto 22px auto;
+  }
+  header .mobile-menu {
+    padding: 12px 10px;
+  }
+  header .resume-download {
+    padding: 0 70px 0 0;
+  }
+  .about-section p {
+    text-align: center;
+  }
+  .portfolio .projects .box .content .pen {
+    font-size: 15px;
+  }
+  .portfolio .projects .box .content .design-element {
+    display: none;
+  }
+  .portfolio .projects .box .content {
+    padding: 30px 0 0 0;
+  }
+  banner .banner-flex {
+    padding: 85px 0 70px 0;
+  }
+  banner .lt-block a {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  banner .lt-block a i {
+    padding-left: 6px;
+    font-size: 13px;
+  }
+  banner .lt-block a i {
+    padding-left: 6px;
+    font-size: 13px;
+  }
+  .about-section .about-section-heding h2 a {
+    font-weight: 500;
+  }
+  .portfolio .portfolio-heading h2 a {
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .portfolio .portfolio-heading h2 i {
+    font-size: 22px;
+  }
+  .contact-section .contact-heading h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+  }
+  .contact-section .contact-heading i {
+    font-size: 19px;
+  }
+  .contact-section .contact-heading h2 a {
+    margin: 0 0 5px 0;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .contact-section .contact-heading .design-element {
+    margin: 0 auto;
+  }
+  .block .social-link span {
+    color: #fff;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+  }
+  .sidebar .block .social-link i {
+    font-size: 21px;
+  }
+  .sidebar-location .block .social-link i {
+    font-size: 20px;
+  }
+  header .mobile-menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  header .mobile-menu p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    font-weight: 600;
+  }
+  header .logo-block h2 {
+    font-size: 20px;
+  }
+  header .mobile-menu a i {
+    color: #000;
+    height: 15px;
+    background: #fff;
+    padding: 12px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 15px;
+    border-radius: 3px;
+  }
+  header .mobile-menu a i {
+    color: #000;
+    height: 15px;
+    background: #fff;
+    padding: 11px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 15px;
+    border-radius: 3px;
+  }
+  .about-section {
+    margin-top: 46px;
+  }
+  banner .rt-block::after {
+    right: 85px;
+    bottom: -94px;
+    width: 194px;
+    height: 232px;
+  }
+}
+@media screen and (max-width: 470px) {
+  header .logo-block h2 {
+    font-size: 18px;
+  }
+  header .resume-download p a {
+    font-size: 13px;
+  }
+  header .mobile-menu {
+    padding: 12px 9px;
+  }
+  .about-section .about-section-heding h2 a {
+    font-size: 20px;
+  }
+  .about-section .about-section-heding h2 i {
+    color: #ff024f;
+    font-size: 20px;
+  }
+  .portfolio {
+    background-color: #1d2025;
+    padding: 65px 0;
+  }
+  .portfolio .portfolio-heading h2 i {
+    color: #ff024f;
+    font-size: 20px;
+  }
+  .portfolio .portfolio-heading h2 a {
+    font-size: 20px;
+  }
+  .portfolio .projects .box .content .pen {
+    color: #ff024f;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  header .logo-block h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  header .resume-download p a {
+    font-size: 12px;
+  }
+  header .resume-download {
+    padding: 0 70px 0 0;
+  }
+  header .mobile-menu {
+    padding: 12px 7px;
+  }
+  header .mobile-menu i {
+    font-size: 13px;
+  }
+  header .mobile-menu {
+    padding: 10px 5px;
+  }
+  header .mobile-menu p {
+    color: #fff;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  header .resume-download {
+    padding: 0 54px 0 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  header .header-flex {
+    padding: 13px 0px;
+  }
+  header .header-flex {
+    padding: 13px 0px;
+  }
+  header .resume-download {
+    padding: 0 25px 0 0;
+  }
+  .primary-button {
+    font-size: 12px;
+  }
+  header .resume-download p a {
+    font-size: 12px;
+  }
+  header .resume-download {
+    padding: 0 47px 0 0;
+  }
+  header .logo-block h2 {
+    font-size: 17px;
+    text-align: center;
+  }
+}
