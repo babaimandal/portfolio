@@ -160,15 +160,17 @@
     /* line-height: 15px; */
     /* border-radius: 3px; */
     gap: 13px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
   }
   header .mobile-menu p {
     color: #fff;
     font-size: 15px;
     font-family: "DM Sans", sans-serif;
-    font-family: "Inter", sans-serif;
-    font-family: "Open Sans", sans-serif;
     margin: 0;
     font-weight: 600;
+
   }
   header .resume-download {
     padding: 0 144px 0 0;
@@ -259,6 +261,7 @@
   banner .lt-block p {
     font-size: 16px;
     font-weight: 400;
+    display: none;
   }
   header .resume-download {
     padding: 0 88px 0 0;
@@ -420,6 +423,7 @@
   }
   .about-section p {
     text-align: center;
+    column-count: 1;
   }
   .portfolio .projects .box .content .pen {
     font-size: 15px;
