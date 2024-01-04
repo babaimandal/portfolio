@@ -1,6 +1,8 @@
 :root {
-  --primary-button-color: #400bd9;
-  --primary-color: #400bd9;
+  --primary-button-color: #4200ff;
+  --primary-color: #4200ff;
+  --secondary-color: #007bff;
+  --tertiary-color: #4200ff;
 }
 *,
 *::after,
@@ -28,7 +30,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-color);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -80,8 +82,8 @@ header .header-flex {
   align-items: center;
   padding: 13px 0;
 }
-header .logo-block{
-    max-width: 250px;
+header .logo-block {
+  max-width: 250px;
 }
 
 header .logo-block a {
@@ -101,13 +103,13 @@ header .nav-block nav ul li {
 header .nav-block nav ul li::after {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  aspect-ratio: 1;
   background-color: var(--primary-color);
   border-radius: 50px;
-  bottom: -108%;
+  bottom: -65%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   opacity: 0;
   visibility: hidden;
   transform: translateX(-100px);
@@ -116,7 +118,7 @@ header .nav-block nav ul li::after {
 header .nav-block nav ul li:hover::after {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(-50%);
 }
 header .header-flex .nav-block nav ul li a {
   font-size: 18px;
@@ -165,6 +167,46 @@ header .resume-download p a {
 header .resume-download p span {
   font-size: 20px;
 }
+
+/* Apply the animation to an element */
+/*#element {
+  animation: shake 0.8s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(-5px, 0);
+  }
+  40% {
+    transform: translate(5px, 0);
+  }
+  50% {
+    transform: translate(-5px, 0);
+  }
+  60% {
+    transform: translate(5px, 0);
+  }
+  70% {
+    transform: translate(-5px, 0);
+  }
+  80% {
+    transform: translate(5px, 0);
+  }
+  90% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}*/
 header .resume-download p span:hover i {
   color: var(--primary-color);
   transition: 0.5s ease-in-out;
@@ -197,19 +239,23 @@ header .resume-download p:active {
   margin: 0;
 }
 .mobile-menu-bar .menu-bar-wrapper ul li {
-  padding: 0;
-  margin-block: 15px;
-  text-align: center;
+    padding: 0;
+    margin-block: 15px;
+    text-align: center;
+    background: #ffffff14;
+    backdrop-filter: blur(10px);
+    padding-inline: 74px;
+    padding-block: 11px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 8px 2px;
 }
 
 .mobile-menu-bar .menu-bar-wrapper ul li a {
-  font-family: inherit;
-  font-size: 32px;
-  color: #fff;
-  line-height: 1.3;
-  font-weight: 600;
+    font-family: inherit;
+    font-size: 21px;
+    color: #fff;
+    font-weight: 700;
+    font-family: monospace;
 }
-
 
 .add-class {
   transform: translateX(0);
@@ -308,7 +354,7 @@ banner .lt-block h3 {
   font-weight: 100;
 }
 banner .lt-block h3 span {
-  color: #400bd9;
+  color: var(--primary-color);
   font-size: 70px;
   /*    font-size: 65px;*/
   font-weight: bold;
@@ -335,6 +381,7 @@ banner .lt-block p {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   max-width: 800px;
+  line-height: 28px;
 }
 banner .rt-block .image-box {
   padding: 8px;
@@ -349,13 +396,14 @@ banner .lt-block a:active {
   scale: 0.96;
 }
 banner .lt-block a {
-  margin-right: 15px;
 }
 banner .lt-block p a {
   color: var(--primary-color);
   font-style: italic;
-  font-weight: 600;
+  font-weight: 900;
+  transition: 0.5s;
 }
+
 banner .lt-block a i {
   padding-left: 6px;
   font-size: 15px;
@@ -415,24 +463,28 @@ banner .rt-block::after {
 /*  About Me  */
 
 .about-section .about-section-heding h2 {
-  color: #fff;
+  
   font-weight: 600;
   font-style: italic;
   position: relative;
+
 }
 .about-section .about-section-heding h2 a {
-  color: #fff;
-  font-weight: 600;
-  font-style: italic;
-  position: relative;
-  margin: 0 0 0 0;
+    color: white;
 }
 .about-section .about-section-heding .design-element {
   width: 60px;
   height: 4px;
-  background-color: #ff024f;
+  background-color: var(--primary-color);
   position: relative;
-  margin: 0 0 50px 0;
+  margin-block-end: 18px;
+}
+.about-section .about-section-heding .design-element {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    position: relative;
+    margin-block-end: 18px;
 }
 .about-section .about-section-heding .design-element::after {
   content: "";
@@ -448,12 +500,12 @@ banner .rt-block::after {
   right: 27px;
   width: 5px;
   height: 4px;
-  background-color: #ff1010;
+  background-color: var(--primary-color);
   z-index: 999;
   transform: skew(147deg);
 }
 .about-section .about-section-heding h2 i {
-  color: #ff024f;
+  color: var(--primary-color);
   font-size: 30px;
 }
 .about-section-heding p {
@@ -461,15 +513,17 @@ banner .rt-block::after {
   font-family: inherit;
   font-weight: 400;
   color: #fff;
+  line-height: 30px;
   column-count: 2;
   column-gap: 30px;
+  margin: 0;
 }
 
 /*  Portfolio  */
 
 .portfolio {
   background-color: #1d2025;
-  padding: 150px 0;
+  padding: 50px 0;
 }
 .portfolio .portfolio-heading h2 {
   color: #fff;
@@ -487,9 +541,9 @@ banner .rt-block::after {
 .portfolio .portfolio-heading .design-element {
   width: 60px;
   height: 4px;
-  background-color: #ff024f;
+  background-color: var(--primary-color) var(--primary-color);
   position: relative;
-  margin: 0 0 50px 0;
+  margin-block-end: 18px;
 }
 .portfolio .portfolio-heading .design-element::after {
   content: "";
@@ -503,60 +557,63 @@ banner .rt-block::after {
   content: "";
   position: absolute;
   right: 27px;
-  width: 5px;
+  width: 33px;
   height: 4px;
-  background-color: #ff1010;
+  background-color: var(--primary-color);
   z-index: 999;
   transform: skew(147deg);
 }
-/*.portfolio .portfolio-heading h2::before {
-    content: '';
-    position: absolute;
-    width: 56px;
-    height: 2px;
-    background-color: #ffffff;
-    bottom: -9px;
-    left: 45px;
-}*/
 .portfolio .portfolio-heading h2 i {
-  color: #ff024f;
+  color: var(--primary-color);
   font-size: 30px;
 }
 .portfolio .projects .box {
-  box-shadow: rgb(75 70 70 / 60%) 0px 0px 8px 2px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 0px 8px 2px;
   width: 100%;
   height: 100%;
   background: rgb(33, 36, 41);
-  background-image: linear-gradient(to bottom right, #171921, #54595b94);
-  padding: 15px 0 45px 0;
+  padding: 15px 0 0px 0;
   border-radius: 3px;
   margin: 25px 0 0 0;
+  border: 1px solid #353535;
 }
 .portfolio .projects .box .image-box {
   width: 91%;
   height: 300px;
-  background-color: #222;
+  background-color: #7b10ff;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
 }
+.portfolio .projects .box .image-box a {
+    height: 100%;
+    width: 100%;
+}
 .portfolio .projects .box .image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 5px;
-  transition: 2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    transition: 2s ease-in-out;
+    object-position: center;
 }
 .portfolio .projects .box .image-box:hover img {
-  transform: scale(1.5);
+  /*  transform: scale(1.5);*/
 }
 .portfolio .projects .box .content {
   padding: 30px 0 0 19px;
   max-width: 384px;
 }
-
+.portfolio .projects .box .content .paragraph{
+      padding: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    
+}
 .portfolio .projects .box .content p {
   color: #fff;
   margin: 0px;
@@ -565,6 +622,7 @@ banner .rt-block::after {
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   padding-top: 20px;
+  
 }
 .portfolio .projects .box .content h2 {
   color: #fff;
@@ -575,7 +633,7 @@ banner .rt-block::after {
   font-family: "Inter", sans-serif;
 }
 .portfolio .projects .box .content h2 i {
-  color: #ff024f;
+  color: var(--primary-color);
 }
 .portfolio .projects .box .content .heart-1 {
   position: relative;
@@ -599,9 +657,23 @@ banner .rt-block::after {
 .portfolio .projects .box .content .design-element {
   width: 60px;
   height: 4px;
-  background-color: #ff024f;
+  background-color: var(--primary-color);
   position: relative;
   margin: 11px 0 0 0;
+}
+.portfolio .projects .box .content a {
+    background-color: var(--tertiary-color);
+    padding-inline: 22px;
+    padding-block: 16px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #676565a8;
+    margin-block-start: 28px;
 }
 .portfolio .projects .box .content .design-element::after {
   content: "";
@@ -617,16 +689,18 @@ banner .rt-block::after {
   right: 27px;
   width: 5px;
   height: 4px;
-  background-color: #ff1010;
+  background-color: var(--primary-color);
   z-index: 999;
   transform: skew(147deg);
 }
 .portfolio .projects .box .content .pen {
-  color: #ff024f;
+  color: var(--primary-color);
   font-size: 22px;
 }
 
-/* skill section*/
+/* ##############################
+          SKILLS SECTION
+################################ */
 
 .skils-section .box {
   width: 100%;
@@ -638,6 +712,7 @@ banner .rt-block::after {
   padding: 0 0 0 15px;
   border-radius: 57px;
 }
+
 .skils-section .content-box {
   width: 60px;
   aspect-ratio: 1/1;
@@ -646,7 +721,9 @@ banner .rt-block::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
 .skils-section .content-box img {
   width: 55%;
   display: block;
@@ -693,7 +770,9 @@ banner .rt-block::after {
   padding: 14px 0;
 }
 
-/* **SKILSS NEW SECTION** */
+/* ##############################
+          SKILLS NEW SECTION
+################################ */
 
 .skill {
   /* margin-top: 200px; */
@@ -702,7 +781,7 @@ banner .rt-block::after {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 51px 0 51px 0;
+  padding: 31px 0 28px 0;
 }
 .skill::after {
   content: "";
@@ -731,14 +810,14 @@ banner .rt-block::after {
   position: relative;
   margin: 0 0 22px 0;
 }
-.skill .skill-heading .design-element {
+.skill  .design-element {
   width: 60px;
   height: 4px;
-  background-color: #ff024f;
+  background-color: var(--primary-color);
   position: relative;
   margin: 0 0 25px 0;
 }
-.skill .skill-heading .design-element::after {
+.skill  .design-element::after {
   content: "";
   position: absolute;
   right: 0;
@@ -746,24 +825,23 @@ banner .rt-block::after {
   height: 4px;
   background-color: #fff;
 }
-.skill .skill-heading .design-element::before {
+.skill  .design-element::before {
   content: "";
   position: absolute;
   right: 25px;
   width: 13px;
   height: 4px;
-  background-color: #ff1010;
+  background-color: var(--primary-color);
   z-index: 999;
   transform: skew(109deg);
 }
-.skill .skill-heading h2 i {
-  color: #ff024f;
+.skill  h2 i {
+  color: var(--primary-color);
   font-size: 30px;
 }
 .skils-section .beginner .design-element {
   width: 60px;
   height: 4px;
-  background-color: #ff024f;
   position: relative;
   margin: 0 0 50px 0;
   margin: 0 auto;
@@ -782,7 +860,7 @@ banner .rt-block::after {
   right: 25px;
   width: 13px;
   height: 4px;
-  background-color: #ff1010;
+  background-color: var(--primary-color);
   z-index: 999;
   transform: skew(109deg);
 }
@@ -868,47 +946,6 @@ banner .rt-block::after {
   font-family: "DM Sans", sans-serif;
 }
 
-/* ************************************************ */
-/* skill section with mwdia query */
-
-/*.skils-block {
-    background-color: #20242C;
-    height: auto;
-    background-image: url(../images/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.skils-block::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #1e232d;
-}*/
-
-/* .skils-block-new {
-    background-color: #20242C;
-    height: auto;
-    background-image: url(../images/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.skils-block-new::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #1e232d;
-}*/
 .skils-block-new .box {
   height: 80px;
   background-color: #161a22;
@@ -1020,17 +1057,17 @@ banner .rt-block::after {
   }
 }
 
-/* ************************************************ */
-
-/* CONTACT SECTION */
+/* ##############################
+         CONTACT SECTION
+################################ */
 
 .contact-section {
   background-color: #1d2025;
-  margin: 63px 0 0 0;
-  padding: 73px 0 50px 0;
+  margin: 50px 0 0 0;
+  padding: 0px 0 20px 0;
 }
 .contact-section .contact-heading i {
-  color: #ff024f;
+  color: var(--primary-color);
   font-size: 30px;
 }
 .contact-section .contact-heading h2 {
@@ -1049,7 +1086,7 @@ banner .rt-block::after {
 .contact-section .contact-heading .design-element {
   width: 60px;
   height: 4px;
-  background-color: #ff024f;
+  background-color: var(--primary-color);
   position: relative;
   margin: 0 0 50px 0;
 }
@@ -1067,7 +1104,7 @@ banner .rt-block::after {
   right: 27px;
   width: 5px;
   height: 4px;
-  background-color: #ff1010;
+  background-color: var(--primary-color);
   z-index: 999;
   transform: skew(147deg);
 }
@@ -1089,7 +1126,7 @@ banner .rt-block::after {
 /* Button - 02 */
 .contact-section .lt-block form button {
   all: unset;
-  background-color: #ff024f;
+  background-color: var(--primary-color);
   padding: 16px 0;
   font-size: 16px;
   font-weight: 600;
@@ -1159,10 +1196,14 @@ banner .rt-block::after {
 }
 .form-block .btn {
   width: 100%;
-  background: #e9044b;
+  background: var(--primary-color);
   border: none;
   border-radius: 3px;
   height: 50px;
+  border: 1px solid #676565a8;
+}
+.form-block .btn:active{
+  transform: scale(0.96);
 }
 .form-block textarea.form-control {
   height: 120px;
@@ -1171,9 +1212,7 @@ banner .rt-block::after {
 .form-block textarea.form-control::placeholder {
   color: #666666;
 }
-.form-control:focus {
-  box-shadow: rgb(255 255 255 / 31%) 0px 3px 2px;
-}
+
 .block {
   position: relative;
   background-color: #3b3c3f;
@@ -1232,7 +1271,9 @@ aside.sidebar-location {
   margin-top: 26px;
 }
 
-/* Footer */
+/* ##############################
+              FOOTER
+################################ */
 
 footer {
   border-top: 1px solid #2c363c;
@@ -1258,6 +1299,7 @@ footer p {
   font-size: 13px;
   font-family: "Inter", sans-serif;
   text-align: center;
+  margin: 0;
 }
 footer nav ul {
   justify-content: center;
@@ -1291,4 +1333,101 @@ footer nav ul li a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+/* ##############################
+          STIKEY ICON
+        SHAKE ANIMATION
+################################ */
+.stikey-icon {
+  position: fixed;
+  bottom: 10px;
+  /* left: 0; */
+  right: 13px;
+  /* top: 0; */
+}
+.stikey-icon:active {
+  transform: scale(0.96);
+}
+.stikey-icon img {
+  max-width: 50px;
+}
+/*################################ 
+         SHAKE ANIMATION
+################################ */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-1px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.stikey-icon {
+  animation: shake 2s infinite;
+  width: 45px;
+  height: 45px;
+}
+/*################################ 
+        ROTATE ANIMATION
+################################ */
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.circular-animation {
+  animation: rotate 2s linear infinite;
+  
+  width: 150px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  
+  border: 5px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  
+  margin-block-start: 150px;
+  margin-inline: auto;
+  
+}
+.circular-animation::after {
+    content: '';
+    position: absolute;
+    
+}
+.box{
+
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+@keyframes heartPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.heart-animation {
+  animation: heartPop 2s ease-in-out infinite;
 }

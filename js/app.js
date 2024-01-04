@@ -21,10 +21,23 @@ $(document).ready(function(){
 	});
 });
 
+/* ############################
+ 	AOS SCROLL ANIMATION
+ #############################*/ 	
+
+
+
+	 // AOS.init();
+
+
+
+
+
 
 /* ############################
  		Skill  Counter
- #############################*/ 	
+ ############################# */
+
 jQuery(document).ready(function($) {
 
   var counters = $(".count");
@@ -42,10 +55,12 @@ jQuery(document).ready(function($) {
         localStart++;
         counters[id].innerHTML = localStart;
       }
-    }, 200);
+    }, 50);
   }
 
   for (j = 0; j < countersQuantity; j++) {
     count(0, counter[j], j);
   }
 });
+
+

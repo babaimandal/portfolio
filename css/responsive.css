@@ -1,4 +1,7 @@
 /* MEDIA QUERY */
+/* #####################################
+                1200
+###################################### */
 @media screen and (max-width: 1200px) {
   .portfolio .projects .box .content h2 {
     font-size: 18px;
@@ -36,7 +39,7 @@
     font-size: 23px;
   }
   .about-section .about-section-heding h2 i {
-    color: #ff024f;
+    color: var(--primary-color);
     font-size: 23px;
   }
   .about-section .about-section-heding h2 a {
@@ -66,6 +69,9 @@
     margin: 0 auto;
   }
 }
+/* #####################################
+                992
+###################################### */
 @media screen and (max-width: 992px) {
   .container,
   .container-md,
@@ -136,29 +142,15 @@
     height: 232px;
   }
 }
-
+/* #####################################
+                799
+###################################### */
 @media screen and (max-width: 799px) {
-  /*  header .mobile-menu {
-    display: block;
-    height: 15px;
-    background: #fff;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 15px;
-    border-radius: 3px;
-  }*/
   header .mobile-menu {
     display: block;
-    /* height: 15px; */
-    /* background: #fff; */
-    /* padding: 15px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* line-height: 15px; */
-    /* border-radius: 3px; */
     gap: 13px;
     background-color: transparent;
     border: none;
@@ -170,7 +162,6 @@
     font-family: "DM Sans", sans-serif;
     margin: 0;
     font-weight: 600;
-
   }
   header .resume-download {
     padding: 0 144px 0 0;
@@ -179,7 +170,6 @@
     display: none;
   }
   header .resume-download p a {
-    /*    display: none;*/
   }
   header .resume-download p .phone-number {
     display: block;
@@ -187,13 +177,96 @@
   header .resume-download p span {
     font-size: 18px;
   }
-  .contact-section {
-    padding: 73px 0 55px 0;
-  }
-  .mobile-number {
-    display: none;
-  }
+.contact-section {
+    padding: 2px 0 20px 0;
 }
+.mobile-number {
+  display: none;
+}
+header .logo-block {
+    max-width: 194px;
+}
+header .mobile-menu i{
+  font-size: 25px;
+}
+header .mobile-menu p{
+  font-size: 18px;
+}
+header .header-flex {
+    margin-inline: 22px;
+}
+.inner-banner-background {
+    overflow-x: clip;
+}
+banner .banner-flex {
+    padding: 100px 0 155px 0;
+}
+.about-section {
+    margin-block-start: 40px;
+}
+banner .lt-block h3 span {
+    padding-block-end: 10px;
+}
+banner .lt-block p {
+    margin: 0;
+    padding-block-end: 18px;
+}
+.about-section-heding p{
+  column-count: 0;
+}
+.portfolio {
+    padding-block-start: 15px;
+}
+.portfolio .projects .box .content {
+    padding-inline: 40px;
+    max-width: 100%;
+}
+.portfolio .projects .box .content p {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-family: monospace;
+}
+.portfolio .projects .box .content h2 {
+    font-size: 22px;
+    font-family: monospace;
+}
+.portfolio .projects .box .image-box {
+    
+    height: 506px;
+   
+}
+.portfolio .projects .box {
+    padding-block: 25px;
+    margin: 0;
+}
+.portfolio {
+    
+    padding: 12px 0;
+}
+.skill-heading{
+    margin-inline-start: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* #####################################
+                599
+###################################### */
 @media screen and (max-width: 599px) {
   .primary-button {
     letter-spacing: 0;
@@ -238,6 +311,9 @@
     max-width: 100%;
   }
 }
+/* #####################################
+                599
+###################################### */
 @media screen and (max-width: 599px) {
   banner .lt-block a i {
     padding-left: 6px;
@@ -261,7 +337,7 @@
   banner .lt-block p {
     font-size: 16px;
     font-weight: 400;
-    display: none;
+    
   }
   header .resume-download {
     padding: 0 88px 0 0;
@@ -352,13 +428,17 @@
   .skils-section .box .content-text {
     margin-top: 8px;
   }
-  .skill {
-    padding: 51px 0 20px 0;
-  }
+.skill {
+    padding: 14px 0 20px 0;
+    padding-block-start: 24px;
+}
   .skils-section .content-text h3 {
-    display: none;
+    
   }
 }
+/* #####################################
+                575
+###################################### */
 @media screen and (max-width: 575px) {
   .skills-hero-content-beginner {
     flex-direction: column;
@@ -372,7 +452,97 @@
     margin: 0 0 5px 0;
     font-weight: 500;
   }
+.primary-button{
+  background-color: #4200FF;
+  padding: 13px 26px;
 }
+banner .rt-block::after {
+    right: 11px;
+    bottom: -104px;
+}
+banner .rt-block .image-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+banner .rt-block .image-block img {
+    max-width: 85%;
+    margin-block-start: 90px;
+}
+.about-section-heding p {
+    column-count: 1;
+}
+.about-section .about-section-heding .design-element {
+    margin-block-end: 10px;
+}
+.portfolio {
+    background-color: #1d2025;
+    padding-block-start: 8px;
+}
+.portfolio .portfolio-heading .design-element{
+  margin-block-end: 35px;
+}
+.top-block .box-1 {
+    width: 47%;
+}
+.skils-section .content-text p{
+  color: #fff;
+}
+.skils-section .content-text .title{
+  justify-content: center;
+}
+.skils-section .box .content-text {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.skils-section .content-text h3 {
+    font-size: 22px;
+    font-family: monospace;
+}
+.skils-section .content-text p {
+    font-size: 21px;
+}
+.middle-block {
+   
+    justify-content: space-between;
+}
+.middle-block .box-2 {
+    width: 47%;
+}
+.bottom-block .box-3 {
+    width: 49%;
+}
+.bottom-block .box-3 .box{
+  margin: 0;
+}
+.contact-section {
+    background-color: #222;
+    margin: 20px 0 0 0;
+    padding: 20px 0 20px 0;
+}.contact-section .contact-heading .design-element {
+    margin-block-end: 20px;
+}
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+/* #####################################
+                499
+###################################### */
 @media screen and (max-width: 499px) {
   banner .banner-flex {
     padding: 250px 0 141px 0;
@@ -403,7 +573,7 @@
   }
   .portfolio .projects .box .content p {
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     padding-top: 12px;
   }
   .portfolio .projects .box {
@@ -536,7 +706,143 @@
     width: 194px;
     height: 232px;
   }
+banner .lt-block h3 span{
+  margin: 0;
 }
+banner .lt-block h4{
+  margin-block-end: 14px;
+}
+header .logo-block {
+    max-width: 175px;
+}
+banner .rt-block::after {
+    right: 4px;
+    bottom: -137px;
+    
+}
+.portfolio-heading{
+    margin-block-end: 25px;
+}
+.portfolio .projects .box .content h2 {
+    font-size: 25px;
+}
+.portfolio .projects .box .content .pen {
+    font-size: 23px;
+}
+.skill-heading {
+    margin: 0;
+}
+.contact-section .contact-heading i {
+    font-size: 22px;
+}
+.contact-section .contact-heading h2 a {
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 27px;
+}
+.skill .skill-heading h2 {
+    font-size: 27px;
+    font-weight: 900;
+}
+.portfolio .portfolio-heading h2 a {
+    font-size: 27px;
+    font-weight: 900;
+    font-family: monospace;
+}
+.about-section .about-section-heding h2 a {
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 27px;
+}
+.skils-section .content-text p {
+    font-size: 18px;
+    font-family: monospace;
+}
+.skils-section .content-text h3 {
+    font-size: 20px;
+    font-family: monospace;
+}
+.skils-section .content-text .title h4 {
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.skill .skill-heading h2 {
+    font-size: 27px;
+    font-weight: 900;
+    font-family: monospace;
+}
+.portfolio {
+    background-color: #1d2025;
+    padding: 10px 0;
+}
+.skils-section .box {
+    height: 104px;
+    text-align: center;
+}
+.skils-section .box {
+    padding: 0;
+    justify-content: center;
+    border-radius: 3px;
+}
+.portfolio .projects .box .image-box {
+    height: 290px;
+}
+header .mobile-menu p {
+    font-family: monospace;
+    font-size: 20px;
+}
+header .mobile-menu i {
+    font-size: 21px;
+}
+header .header-flex {
+    margin-inline: 0px;
+}
+header .header-flex {
+    padding: 0;
+    padding-block: 6px;
+}
+header .logo-block {
+    max-width: 140px;
+}
+header .mobile-menu p {
+    font-family: monospace;
+    font-size: 17px;
+}
+header .mobile-menu i {
+    font-size: 17px;
+}
+.about-section p span{
+  display: none;
+}
+.about-section p {
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 9px;
+
+}
+
+banner .banner-flex .lt-block {
+    text-align: justify;
+    line-height: 22px;
+}
+banner .lt-block h4 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: -12px;
+    margin-bottom: 22px;
+    max-width: 238px;
+    font-family: georgia;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+}
+/* #####################################
+                470
+###################################### */
 @media screen and (max-width: 470px) {
   header .logo-block h2 {
     font-size: 18px;
@@ -576,36 +882,25 @@
     font-size: 18px;
     text-align: center;
   }
-  header .resume-download p a {
-    font-size: 12px;
-  }
+ 
   header .resume-download {
     padding: 0 70px 0 0;
   }
   header .mobile-menu {
     padding: 12px 7px;
   }
-  header .mobile-menu i {
-    font-size: 13px;
-  }
+
   header .mobile-menu {
     padding: 10px 5px;
   }
-  header .mobile-menu p {
-    color: #fff;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif;
-    font-family: "Inter", sans-serif;
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    font-weight: 500;
-  }
+
 }
 
 @media screen and (max-width: 385px) {
   header .resume-download {
     padding: 0 54px 0 0;
   }
+
 }
 @media screen and (max-width: 350px) {
   header .header-flex {
@@ -631,3 +926,23 @@
     text-align: center;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
