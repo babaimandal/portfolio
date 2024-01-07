@@ -168,45 +168,6 @@ header .resume-download p span {
   font-size: 20px;
 }
 
-/* Apply the animation to an element */
-/*#element {
-  animation: shake 0.8s infinite;
-}
-@keyframes shake {
-  0% {
-    transform: translate(0);
-  }
-  10% {
-    transform: translate(-5px, 0);
-  }
-  20% {
-    transform: translate(5px, 0);
-  }
-  30% {
-    transform: translate(-5px, 0);
-  }
-  40% {
-    transform: translate(5px, 0);
-  }
-  50% {
-    transform: translate(-5px, 0);
-  }
-  60% {
-    transform: translate(5px, 0);
-  }
-  70% {
-    transform: translate(-5px, 0);
-  }
-  80% {
-    transform: translate(5px, 0);
-  }
-  90% {
-    transform: translate(-5px, 0);
-  }
-  100% {
-    transform: translate(0);
-  }
-}*/
 header .resume-download p span:hover i {
   color: var(--primary-color);
   transition: 0.5s ease-in-out;
@@ -242,7 +203,7 @@ header .resume-download p:active {
     padding: 0;
     margin-block: 15px;
     text-align: center;
-    background: #ffffff14;
+/*    background: #ffffff14;*/
     backdrop-filter: blur(10px);
     padding-inline: 74px;
     padding-block: 11px;
@@ -395,7 +356,8 @@ banner .rt-block .image-box img {
 banner .lt-block a:active {
   scale: 0.96;
 }
-banner .lt-block a {
+banner .lt-block .cta-button a {
+    margin-inline-end: 12px;
 }
 banner .lt-block p a {
   color: var(--primary-color);
@@ -509,16 +471,23 @@ banner .rt-block::after {
   font-size: 30px;
 }
 .about-section-heding p {
-  font-size: 18px;
-  font-family: inherit;
-  font-weight: 400;
-  color: #fff;
-  line-height: 30px;
-  column-count: 2;
-  column-gap: 30px;
-  margin: 0;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    column-count: 2;
+    column-gap: 30px;
+    margin: 0;
+    font-style: italic;
+    text-align: justify;
 }
-
+banner .lt-block p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+}
 /*  Portfolio  */
 
 .portfolio {
@@ -625,12 +594,16 @@ banner .rt-block::after {
   
 }
 .portfolio .projects .box .content h2 {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 700;
-  margin: 0;
-  position: relative;
-  font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-style: italic;
 }
 .portfolio .projects .box .content h2 i {
   color: var(--primary-color);
@@ -776,12 +749,12 @@ banner .rt-block::after {
 
 .skill {
   /* margin-top: 200px; */
-  background-image: url(../images/bg.jpg);
+/*  background-image: url(../images/bg.jpg);*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 31px 0 28px 0;
+/*  padding: 31px 0 28px 0;*/
 }
 .skill::after {
   content: "";
@@ -947,14 +920,16 @@ banner .rt-block::after {
 }
 
 .skils-block-new .box {
-  height: 80px;
-  background-color: #161a22;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 0 0 15px;
-  border-radius: 57px;
-  margin: 0 0 29px 0;
+    height: 80px;
+    background-color: #161a22a3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 15px;
+    border-radius: 57px;
+    margin:0;
+    backdrop-filter: blur(8px);
+    border: 1px solid #282d39;
 }
 .content-box {
   width: 60px;
@@ -991,12 +966,13 @@ banner .rt-block::after {
 /* ***********************************/
 .top-block {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 15px;
 }
 .top-block .box-1 {
-  width: 30%;
+  width: calc(25% - 15px);
 }
 .middle-block {
   display: flex;
@@ -1020,7 +996,7 @@ banner .rt-block::after {
 
 @media screen and (max-width: 992px) {
   .top-block .box-1 {
-    width: 100%;
+    width: calc(33.33% - 15px);
   }
   .middle-block .box-2 {
     width: 100%;
@@ -1247,7 +1223,7 @@ banner .rt-block::after {
 }
 .sidebar {
   width: 45%;
-  margin-top: 31px;
+  margin-top: 26px;
   height: 56px;
 }
 .block .social-link span {

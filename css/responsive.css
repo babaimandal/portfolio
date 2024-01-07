@@ -9,10 +9,7 @@
   banner .lt-block h3 {
     font-size: 35px;
   }
-  .skils-section .box {
-    /*    height: 62px;*/
-    padding: 0 0 0 7px;
-  }
+
   .skils-section .content-text h3 {
     font-size: 17px;
   }
@@ -77,6 +74,16 @@
   .container-md,
   .container-sm {
     max-width: 833px;
+  }
+  .about-section-heding p{
+    column-count: 1;
+  }
+  .about-section-heding p span{
+    display: none;
+  }
+  .inner-banner-background {
+      
+      overflow-x: clip;
   }
   header .resume-download {
     display: flex;
@@ -218,7 +225,7 @@ banner .lt-block p {
     padding-block-start: 15px;
 }
 .portfolio .projects .box .content {
-    padding-inline: 40px;
+    padding-inline: 28px;
     max-width: 100%;
 }
 .portfolio .projects .box .content p {
@@ -413,16 +420,18 @@ banner .lt-block p {
     align-items: center;
     padding: 0 0 0 15px;
     border-radius: 10px;
-    margin: 0 0 29px 0;
     flex-direction: column;
     padding: 15px 0;
   }
-  .skils-section .box {
-    height: 120px;
-    text-align: center;
+   .skils-section .box {
+      height: 135px;
+      text-align: center;
   }
   .skils-section .box {
     padding: 0;
+    justify-content: center;
+  }
+  .skils-section .content-text .title {
     justify-content: center;
   }
   .skils-section .box .content-text {
@@ -493,21 +502,18 @@ banner .rt-block .image-block img {
 }
 .skils-section .box .content-text {
     margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    
 }
 .skils-section .content-text h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-family: monospace;
 }
 .skils-section .content-text p {
-    font-size: 21px;
+    font-size: 16px;
 }
 .middle-block {
-   
-    justify-content: space-between;
+    justify-content: center;
+    gap: 14px;
 }
 .middle-block .box-2 {
     width: 47%;
@@ -533,17 +539,32 @@ footer p {
 
 
 
-
-
-
-
-
-
 }
 /* #####################################
                 499
 ###################################### */
 @media screen and (max-width: 499px) {
+  .contact-section {
+    background-color: #2a2c6d;
+}
+.sidebar .border {
+    border: none!important;
+
+    background: #454577;
+}
+.block {
+    position: relative;
+    background-color: #3b3c3f;
+    box-shadow: rgb(0 45 143 / 21%) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.block {
+    position: relative;
+    background-color: #454577;
+    box-shadow: rgb(0 45 143 / 21%) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+aside.sidebar-location .block{
+  border: none!important;
+}
   banner .banner-flex {
     padding: 250px 0 141px 0;
   }
@@ -565,14 +586,10 @@ footer p {
   .about-section .about-section-heding .design-element {
     margin: 0 auto;
   }
-  .portfolio .projects .box .content h2 {
-    text-align: center;
-  }
   .portfolio .projects .box .content .design-element {
     margin: 0 auto;
   }
   .portfolio .projects .box .content p {
-    text-align: center;
     font-size: 15px;
     padding-top: 12px;
   }
@@ -591,10 +608,11 @@ footer p {
   header .resume-download {
     padding: 0 70px 0 0;
   }
-  .about-section p {
-    text-align: center;
+ .about-section p {
+    text-align: justify;
     column-count: 1;
-  }
+}
+
   .portfolio .projects .box .content .pen {
     font-size: 15px;
   }
@@ -602,7 +620,7 @@ footer p {
     display: none;
   }
   .portfolio .projects .box .content {
-    padding: 30px 0 0 0;
+   
   }
   banner .banner-flex {
     padding: 85px 0 70px 0;
@@ -755,17 +773,17 @@ banner .rt-block::after {
     font-size: 27px;
 }
 .skils-section .content-text p {
-    font-size: 18px;
+    font-size: 17px;
     font-family: monospace;
 }
 .skils-section .content-text h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: monospace;
 }
 .skils-section .content-text .title h4 {
     color: #fff;
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
 }
 .skill .skill-heading h2 {
@@ -776,15 +794,6 @@ banner .rt-block::after {
 .portfolio {
     background-color: #1d2025;
     padding: 10px 0;
-}
-.skils-section .box {
-    height: 104px;
-    text-align: center;
-}
-.skils-section .box {
-    padding: 0;
-    justify-content: center;
-    border-radius: 3px;
 }
 .portfolio .projects .box .image-box {
     height: 290px;
@@ -820,7 +829,7 @@ header .mobile-menu i {
     font-size: 15px;
     line-height: 23px;
     margin-top: 9px;
-
+    margin-block-end: 23px;
 }
 
 banner .banner-flex .lt-block {
@@ -837,6 +846,35 @@ banner .lt-block h4 {
     font-weight: 400;
     font-style: italic;
 }
+banner .lt-block p a {
+    font-size: 15px;
+}
+.skils-section .box {
+    background-color: #ffffff2b;
+    backdrop-filter: blur(10px);
+    gap: 3px;
+    margin-block-end: 13px;
+    height: 126px;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.skils-section .box .content-text{
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
