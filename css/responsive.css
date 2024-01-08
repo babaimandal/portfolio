@@ -59,9 +59,7 @@
   banner .banner-flex {
     flex-direction: column;
   }
-  banner .banner-flex .lt-block {
-    text-align: center;
-  }
+  
   banner .rt-block .image-block {
     margin: 0 auto;
   }
@@ -142,17 +140,31 @@
     text-align: center;
     justify-content: center;
   }
-  banner .rt-block::after {
-    right: 120px;
-    bottom: -94px;
-    width: 194px;
-    height: 232px;
-  }
+banner .rt-block::after {
+    right: 1px;
+    bottom: -221px;
+    width: 226px;
+    height: 231px;
+}
 }
 /* #####################################
                 799
 ###################################### */
 @media screen and (max-width: 799px) {
+  banner .lt-block h4 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    max-width: 1079px;
+    font-family: georgia;
+    font-weight: 400;
+}
+  banner .lt-block h4 {
+    font-size: 30px;
+    font-family: georgia;
+    font-weight: 700;
+}
   header .mobile-menu {
     display: block;
     display: flex;
@@ -211,9 +223,7 @@ banner .banner-flex {
 .about-section {
     margin-block-start: 40px;
 }
-banner .lt-block h3 span {
-    padding-block-end: 10px;
-}
+
 banner .lt-block p {
     margin: 0;
     padding-block-end: 18px;
@@ -494,7 +504,7 @@ banner .rt-block .image-block{
 }
 banner .rt-block .image-block img {
     max-width: 85%;
-    margin-block-start: 25px;
+    margin-block-start: 84px;
 }
 .about-section-heding p {
     column-count: 1;
@@ -725,8 +735,9 @@ aside.sidebar-location .block{
     width: 194px;
     height: 232px;
   }
-banner .lt-block h3 span{
-  margin: 0;
+banner .lt-block h3 span {
+    font-size: 30px;
+    padding-block-end: 9px;
 }
 banner .lt-block h4{
   margin-block-end: 14px;
@@ -830,17 +841,20 @@ header .mobile-menu i {
 }
 
 banner .banner-flex .lt-block {
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 22px;
+    text-align: start;
+}
+banner .lt-block h4 {
+    font-family: georgia;
+    font-weight: 700;
 }
 banner .lt-block h4 {
     color: #fff;
-    font-size: 28px;
+    font-size: 25px;
     margin-top: -12px;
-    margin-bottom: 22px;
-    max-width: 250px;
-    font-family: georgia;
-   
+    margin-bottom: 10px;
+    max-width: 293px;
 }
 banner .lt-block p a {
     font-size: 15px;
