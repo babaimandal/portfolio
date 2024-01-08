@@ -331,7 +331,6 @@ banner .lt-block h4 {
   max-width: 1079px;
   font-family: georgia;
   font-weight: 400;
-  font-style: italic;
 }
 banner .lt-block p {
   color: #fff;
@@ -603,7 +602,7 @@ banner .lt-block p {
     display: flex;
     gap: 10px;
     align-items: center;
-    font-style: italic;
+    
 }
 .portfolio .projects .box .content h2 i {
   color: var(--primary-color);

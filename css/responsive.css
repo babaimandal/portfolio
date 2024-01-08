@@ -37,8 +37,8 @@
   }
   .about-section .about-section-heding h2 i {
     color: var(--primary-color);
-    font-size: 23px;
-  }
+    font-size: 25px;
+}
   .about-section .about-section-heding h2 a {
     margin: 0 0 5px 0;
   }
@@ -232,16 +232,17 @@ banner .lt-block p {
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
-    font-family: monospace;
+    
 }
 .portfolio .projects .box .content h2 {
     font-size: 22px;
-    font-family: monospace;
+    
 }
 .portfolio .projects .box .image-box {
-    
-    height: 506px;
-   
+    height: 285px;
+}
+.portfolio .projects .box .content h2 {
+    font-size: 20px;
 }
 .portfolio .projects .box {
     padding-block: 25px;
@@ -275,6 +276,21 @@ banner .lt-block p {
                 599
 ###################################### */
 @media screen and (max-width: 599px) {
+  .portfolio .projects .box .image-box{
+    width: 95%;
+  }
+  .portfolio .projects .box .content {
+    padding-inline: 11px;
+    max-width: 100%;
+}
+.portfolio .projects .box .content p {
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+.portfolio .projects .box .content h2 {
+    font-size: 18px;
+}
   .primary-button {
     letter-spacing: 0;
   }
@@ -322,6 +338,9 @@ banner .lt-block p {
                 599
 ###################################### */
 @media screen and (max-width: 599px) {
+  .about-section {
+    margin-block-start: 103px;
+}
   banner .lt-block a i {
     padding-left: 6px;
     font-size: 14px;
@@ -341,11 +360,10 @@ banner .lt-block p {
   banner .lt-block h3 span {
     font-size: 30px;
   }
-  banner .lt-block p {
-    font-size: 16px;
+ banner .lt-block p {
+    font-size: 17px;
     font-weight: 400;
-    
-  }
+}
   header .resume-download {
     padding: 0 88px 0 0;
   }
@@ -378,15 +396,15 @@ banner .lt-block p {
   }
   .portfolio {
     background-color: #1d2025;
-    padding: 85px 0;
-  }
+    padding: 55px 0;
+}
   .about-section .about-section-heding h2 {
     margin: 0px;
   }
   .portfolio .projects .box .content h2 {
     font-size: 16px;
     font-weight: 600;
-    font-style: italic;
+    
     margin-bottom: 5px;
   }
   .portfolio .projects .box .content p {
@@ -465,9 +483,9 @@ banner .lt-block p {
   background-color: #4200FF;
   padding: 13px 26px;
 }
-banner .rt-block::after {
-    right: 11px;
-    bottom: -104px;
+.portfolio {
+    background-color: #1d2025;
+    padding: 36px 0;
 }
 banner .rt-block .image-block{
   display: flex;
@@ -476,7 +494,7 @@ banner .rt-block .image-block{
 }
 banner .rt-block .image-block img {
     max-width: 85%;
-    margin-block-start: 90px;
+    margin-block-start: 25px;
 }
 .about-section-heding p {
     column-count: 1;
@@ -544,24 +562,7 @@ footer p {
                 499
 ###################################### */
 @media screen and (max-width: 499px) {
-  .contact-section {
-    background-color: #2a2c6d;
-}
-.sidebar .border {
-    border: none!important;
-
-    background: #454577;
-}
-.block {
-    position: relative;
-    background-color: #3b3c3f;
-    box-shadow: rgb(0 45 143 / 21%) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.block {
-    position: relative;
-    background-color: #454577;
-    box-shadow: rgb(0 45 143 / 21%) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
+  
 aside.sidebar-location .block{
   border: none!important;
 }
@@ -742,7 +743,7 @@ banner .rt-block::after {
     margin-block-end: 25px;
 }
 .portfolio .projects .box .content h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 .portfolio .projects .box .content .pen {
     font-size: 23px;
@@ -754,8 +755,7 @@ banner .rt-block::after {
     font-size: 22px;
 }
 .contact-section .contact-heading h2 a {
-    font-weight: 900;
-    font-family: monospace;
+    font-weight: 700;
     font-size: 27px;
 }
 .skill .skill-heading h2 {
@@ -764,12 +764,10 @@ banner .rt-block::after {
 }
 .portfolio .portfolio-heading h2 a {
     font-size: 27px;
-    font-weight: 900;
-    font-family: monospace;
+    font-weight: 700;
 }
 .about-section .about-section-heding h2 a {
-    font-weight: 900;
-    font-family: monospace;
+    font-weight: 700;
     font-size: 27px;
 }
 .skils-section .content-text p {
@@ -788,8 +786,7 @@ banner .rt-block::after {
 }
 .skill .skill-heading h2 {
     font-size: 27px;
-    font-weight: 900;
-    font-family: monospace;
+    font-weight: 700;
 }
 .portfolio {
     background-color: #1d2025;
@@ -826,9 +823,9 @@ header .mobile-menu i {
   display: none;
 }
 .about-section p {
-    font-size: 15px;
-    line-height: 23px;
-    margin-top: 9px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 22px;
     margin-block-end: 23px;
 }
 
@@ -838,13 +835,12 @@ banner .banner-flex .lt-block {
 }
 banner .lt-block h4 {
     color: #fff;
-    font-size: 22px;
+    font-size: 28px;
     margin-top: -12px;
     margin-bottom: 22px;
-    max-width: 238px;
+    max-width: 250px;
     font-family: georgia;
-    font-weight: 400;
-    font-style: italic;
+   
 }
 banner .lt-block p a {
     font-size: 15px;
@@ -891,24 +887,16 @@ banner .lt-block p a {
   header .mobile-menu {
     padding: 12px 9px;
   }
-  .about-section .about-section-heding h2 a {
-    font-size: 20px;
-  }
-  .about-section .about-section-heding h2 i {
-    color: #ff024f;
-    font-size: 20px;
-  }
-  .portfolio {
+ .portfolio {
     background-color: #1d2025;
-    padding: 65px 0;
-  }
-  .portfolio .portfolio-heading h2 i {
-    color: #ff024f;
-    font-size: 20px;
-  }
-  .portfolio .portfolio-heading h2 a {
-    font-size: 20px;
-  }
+    padding: 30px 0;
+}
+ .portfolio .portfolio-heading h2 i {
+    font-size: 23px;
+}
+ .portfolio .portfolio-heading h2 a {
+    font-size: 27px;
+}
   .portfolio .projects .box .content .pen {
     color: #ff024f;
     font-size: 15px;
