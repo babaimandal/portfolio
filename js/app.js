@@ -61,6 +61,16 @@ jQuery(document).ready(function($) {
   for (j = 0; j < countersQuantity; j++) {
     count(0, counter[j], j);
   }
+
+
+
+//Footer year
+	let yearElement = document.querySelector('.all-rights-reserved p span');
+	let year = new Date().getFullYear();
+
+	yearElement.innerText = year;
+
+	
 });
 
 
