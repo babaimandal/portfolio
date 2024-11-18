@@ -537,7 +537,7 @@ banner .lt-block p {
 .portfolio .projects .box {
   box-shadow: rgb(0 0 0 / 15%) 0px 0px 8px 2px;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgb(33, 36, 41);
   padding: 15px 0 0px 0;
   border-radius: 3px;
